@@ -1,0 +1,87 @@
+{
+    "plants": [
+        {
+            "id":1,
+            "name":"Ceropegia Woodii",
+            "description":"Procede de Sudáfrica y también se la denomina Enredadera rosario o Rosario de corazones. Es una planta colgante y puede llegar a medir hasta 4 metros. Su capacidad para almacenar agua y su resistencia a las plagas la convierten en la candidata perfecta para todos aquellos primerizos con ganas de tener una planta bonita.",
+            "price":4.95,
+            "location":"Planta de interior",
+            "temperature": "15º-21º",
+            "riego":"Únicamente cuando el sustrato se seque.",
+            "light":"Luz indirecta.",
+            "photo":"https://images.pexels.com/photos/10592221/pexels-photo-10592221.jpeg"
+        },
+        {
+            "id":2,
+            "name":"Monstera deliciosa",
+            "description":"Contaros que aunque también sea Monstera, no se parece en nada a la Adansonii, ni en crecimiento ni en las hojas. Esta crece un poco más lenta, y sus hojas no tienen los agujeros característicos de la otra al principio. Sus hojas se irán ramificando a medida que crece desde el nervio hasta el borde.",
+            "price":6.95,
+            "location":"Planta de interior",
+            "temperature": "Es una planta que aguanta bien temperaturas entre los 18° y 27°.",
+            "riego":"Regar cuando el sustrato se seque, y pulverizar sus hojas",
+            "light":"Luminosidad con luz indirecta",
+            "photo":"https://images.pexels.com/photos/12684651/pexels-photo-12684651.jpeg"
+        },
+        {
+            "id":3,
+            "name":"Pilea Peperomioides",
+            "description":"Si este nombre os parece un poco imposible, que sepáis que también se la conoce como planta china del dinero o planta de misionero. En los últimos años se ha puesto de moda y es un must en cualquier ‘casa pinterest’ que se precie.",
+            "price":5.95,
+            "location":"Mini planta de interior",
+            "temperature": "Aguanta bien temperaturas entre los 15° y 21°.",
+            "riego":"Es recomendable regarla cuando el sustrato esté seco",
+            "light":"Luz indirecta.",
+            "photo":"https://images.pexels.com/photos/6915358/pexels-photo-6915358.jpeg",
+            "images":[
+                {
+                "id":1,
+                "url":"https://img.freepik.com/foto-gratis/planta-zz-maceta-gris_53876-134285.jpg?w=740&t=st=1701193655~exp=1701194255~hmac=4bb0c2499d446b5482215232b5ae5de80e18ccaaddf6d1be87808c91a0ffb47e"   
+                }
+            ]
+        },
+        {
+            "id":4,
+            "name":"Zamioculca",
+            "description":"La Zamioculcas Zamifoliia es una de las plantas top para aquellos mata-plantas. Es impresionante la relación fácil cuidado - preciosidad de esta planta de origen africano, desde hace unos años se ha convertido en una mini obligada en cualquier casa. Se la relaciona directamente con ser calibrante de las corrientes del feng shui. Tiene un crecimiento lento pero crece hasta un metro de altura. Lo mejor de todo es que sus cuidado son muuuy sencillos.",
+            "price":4.95,
+            "location":"Planta de interior",
+            "temperature": "15º-21º",
+            "riego":"Únicamente cuando el sustrato se seque.",
+            "light":"Luz indirecta.",
+            "photo":"https://images.pexels.com/photos/9767836/pexels-photo-9767836.jpeg"
+        },
+        {
+            "id":5,
+            "name":"Monstera deliciosa",
+            "description":"Contaros que aunque también sea Monstera, no se parece en nada a la Adansonii, ni en crecimiento ni en las hojas. Esta crece un poco más lenta, y sus hojas no tienen los agujeros característicos de la otra al principio. Sus hojas se irán ramificando a medida que crece desde el nervio hasta el borde.",
+            "price":6.95,
+            "location":"Planta de interior",
+            "temperature": "Es una planta que aguanta bien temperaturas entre los 18° y 27°.",
+            "riego":"Regar cuando el sustrato se seque, y pulverizar sus hojas",
+            "light":"Luminosidad con luz indirecta",
+            "photo":"https://img.freepik.com/foto-gratis/monstera-deliciosa-planta-maceta_53876-133119.jpg",
+            "images":[
+                {
+                "url":" https://images.pexels.com/photos/12684651/pexels-photo-12684651.jpeg"
+                }
+               
+
+            ]
+        },
+        {
+            "id":6,
+            "name":"Sansevieria Zeylanica",
+            "description":"Procede de África y es bautizada con muchos nombres, los más famosos:planta bayoneta. Crece despacio pero es alucinante como de van desarrollando las nuevas hojas.Es una de las mejores plantas purificadoras.",
+            "price":5.95,
+            "location":"Mini planta de interior",
+            "temperature": "Aguanta bien temperaturas entre los 15° y 21°.",
+            "riego":"Poco riego, cuando el sustrato esté seco y nunca pulverizar",
+            "light":"Luz indirecta.",
+            "photo":"https://www.cambridgebee.com/cdn/shop/products/Sansevieria-2-1_1200x.jpg"
+            
+        }
+
+    ]
+}
+
+

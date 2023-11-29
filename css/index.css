@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap');
+
+
+body{
+    font-family:'Quicksand', sans-serif;
+}
+
+#plants{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+
+.card-img-top{
+    width:280px;
+    height:280px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 14px;
+}
