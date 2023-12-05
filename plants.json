@@ -2,25 +2,27 @@
     "plants": [
         {
             "id":1,
-            "name":"Ceropegia Woodii",
-            "description":"Procede de Sudáfrica y también se la denomina Enredadera rosario o Rosario de corazones. Es una planta colgante y puede llegar a medir hasta 4 metros. Su capacidad para almacenar agua y su resistencia a las plagas la convierten en la candidata perfecta para todos aquellos primerizos con ganas de tener una planta bonita.",
+            "name":"Hoya Kerrii",
+            "description":"Procede de Sudáfrica. Esta mini planta seguirá siendo pequeña, por lo que no tendréis que preocuparos por transplantarla ni cambiarla de sitio.", 
             "price":4.95,
             "location":"Planta de interior",
-            "temperature": "15º-21º",
+            "temperature": "10º-27º",
+            "toxicidad":"No es tóxica en animales.",
             "riego":"Únicamente cuando el sustrato se seque.",
-            "light":"Luz indirecta.",
-            "photo":"https://images.pexels.com/photos/10592221/pexels-photo-10592221.jpeg"
+            "light":"Necesita de espacios muy luminosos sin incidencia directa del sol.",
+            "photo":"https://i.pinimg.com/564x/a1/e8/ea/a1e8ea461621c549db85ea197586bbb2.jpg"
         },
         {
             "id":2,
-            "name":"Monstera deliciosa",
-            "description":"Contaros que aunque también sea Monstera, no se parece en nada a la Adansonii, ni en crecimiento ni en las hojas. Esta crece un poco más lenta, y sus hojas no tienen los agujeros característicos de la otra al principio. Sus hojas se irán ramificando a medida que crece desde el nervio hasta el borde.",
+            "name":"Zamioculca",
+            "description":"La Zamioculcas Zamifoliia es una de las plantas top para aquellos mata-plantas. Es impresionante la relación fácil cuidado - preciosidad de esta planta de origen africano, desde hace unos años se ha convertido en una mini obligada en cualquier casa. Se la relaciona directamente con ser calibrante de las corrientes del feng shui. Tiene un crecimiento lento pero crece hasta un metro de altura. Lo mejor de todo es que sus cuidado son muuuy sencillos. ",
             "price":6.95,
             "location":"Planta de interior",
-            "temperature": "Es una planta que aguanta bien temperaturas entre los 18° y 27°.",
-            "riego":"Regar cuando el sustrato se seque, y pulverizar sus hojas",
-            "light":"Luminosidad con luz indirecta",
-            "photo":"https://images.pexels.com/photos/12684651/pexels-photo-12684651.jpeg"
+            "temperature": "Es una planta que aguanta bien temperaturas entre los 15°C y 30°C.",
+            "toxicidad":"No es tóxica en animales.",
+            "riego":"Funciona como una crasa, no necesita mucho riego porque almacena agua en sus hojas.",
+            "light":"Puede vivir en espacios de cualquier claridad, tolera gran claridad y dependiendo de la época del año, sol directo.",
+            "photo":"https://i.pinimg.com/564x/b8/58/63/b858636584ffdcc421100f6adbe36f9e.jpg"
         },
         {
             "id":3,
@@ -29,9 +31,10 @@
             "price":5.95,
             "location":"Mini planta de interior",
             "temperature": "Aguanta bien temperaturas entre los 15° y 21°.",
+            "toxicidad":"No es tóxica en animales.",
             "riego":"Es recomendable regarla cuando el sustrato esté seco",
             "light":"Luz indirecta.",
-            "photo":"https://images.pexels.com/photos/6915358/pexels-photo-6915358.jpeg",
+            "photo":"https://i.pinimg.com/564x/7e/0b/f5/7e0bf5b2eb4165f66f85ff4a98170faa.jpg",
             "images":[
                 {
                 "id":1,
@@ -41,14 +44,15 @@
         },
         {
             "id":4,
-            "name":"Zamioculca",
-            "description":"La Zamioculcas Zamifoliia es una de las plantas top para aquellos mata-plantas. Es impresionante la relación fácil cuidado - preciosidad de esta planta de origen africano, desde hace unos años se ha convertido en una mini obligada en cualquier casa. Se la relaciona directamente con ser calibrante de las corrientes del feng shui. Tiene un crecimiento lento pero crece hasta un metro de altura. Lo mejor de todo es que sus cuidado son muuuy sencillos.",
+            "name":"Begonia",
+            "description":"Es feliz en espacios muy muy luminosos pero ya sabéis, sin luz directa del sol. Así mismo, si tenéis una zona al aire libre donde dé la sombra, trasladadlas allí en verano.",
             "price":4.95,
             "location":"Planta de interior",
-            "temperature": "15º-21º",
-            "riego":"Únicamente cuando el sustrato se seque.",
-            "light":"Luz indirecta.",
-            "photo":"https://images.pexels.com/photos/9767836/pexels-photo-9767836.jpeg"
+            "temperature": "18º-23º.",
+            "toxicidad":"No es tóxica en animales.",
+            "riego":"Únicamente cuando el sustrato esté seco. Nunca pulverizar las hojas",
+            "light":"Espacios luminosos con luz indirecta.",
+            "photo":"https://i.pinimg.com/564x/89/2c/40/892c40d53434bb0a61634e14d7a908f7.jpg"
         },
         {
             "id":5,
@@ -57,9 +61,10 @@
             "price":6.95,
             "location":"Planta de interior",
             "temperature": "Es una planta que aguanta bien temperaturas entre los 18° y 27°.",
+            "toxicidad":"No es tóxica en animales.",
             "riego":"Regar cuando el sustrato se seque, y pulverizar sus hojas",
             "light":"Luminosidad con luz indirecta",
-            "photo":"https://img.freepik.com/foto-gratis/monstera-deliciosa-planta-maceta_53876-133119.jpg",
+            "photo":"https://i.pinimg.com/564x/61/82/1a/61821adc2d24e1a7e3fca7c09f00066f.jpg",
             "images":[
                 {
                 "url":" https://images.pexels.com/photos/12684651/pexels-photo-12684651.jpeg"
@@ -70,14 +75,41 @@
         },
         {
             "id":6,
-            "name":"Sansevieria Zeylanica",
+            "name":"Alocasia Frydek Variegata",
+            "description":"También llamada White Little Queen. Es una de las plantas más raras y exóticas que existen y se producen muy muy pocas a lo largo del año.",
+            "price":5.95,
+            "location":"Mini planta de interior",
+            "temperature": "Es una planta que aguanta bien temperaturas entre los 15°C y 27°C. Cuidado con pasarse de frío.",
+            "toxicidad":"No es tóxica en animales.",
+            "riego":"Dejar secar la capa superficial entre riegos. Es propensa a que sus raíces se pudran, así que cuidado con el exceso de humedad y riego.",
+            "light":"Mucha luz y claridad, pero siempre luz indirecta. Tolera la luz baja.",
+            "photo":"https://i.pinimg.com/564x/48/82/a3/4882a38a0fbdb6d2f98a0e7a56490149.jpg"
+            
+        },
+        {
+            "id":7,
+            "name":"Alocasia",
             "description":"Procede de África y es bautizada con muchos nombres, los más famosos:planta bayoneta. Crece despacio pero es alucinante como de van desarrollando las nuevas hojas.Es una de las mejores plantas purificadoras.",
             "price":5.95,
             "location":"Mini planta de interior",
             "temperature": "Aguanta bien temperaturas entre los 15° y 21°.",
+            "toxicidad":"No es tóxica en animales.",
             "riego":"Poco riego, cuando el sustrato esté seco y nunca pulverizar",
             "light":"Luz indirecta.",
-            "photo":"https://www.cambridgebee.com/cdn/shop/products/Sansevieria-2-1_1200x.jpg"
+            "photo":"https://i.pinimg.com/564x/35/ad/ae/35adae7f36a22641d47eeda9167bdb00.jpg"
+            
+        },
+        {
+            "id":8,
+            "name":"Potho",
+            "description":"El Potho es probablemente el más bonito de la familia. Se conoce también como Reina de Mármol por sus tonos blancos. Su nombre científico es Epipremnum Aureum Marble Queen. Sus hojas cada vez se van haciendo más blancas y con forma de corazón. Su crecimiento es lento pero seguro, es una de las plantas indestructibles que necesita muy poco cuidado, apta para que a todos los públicos le dure una vida.",
+            "price":5.95,
+            "location":"Mini planta de interior",
+            "temperature": "Es una planta que aguanta bien temperaturas entre los 14°C y 35°C. Su temperatura favorita es entre los 19º y los 29º.",
+            "toxicidad":"No es tóxica en animales.",
+            "riego":"Poco riego, cuando el sustrato esté seco y nunca pulverizar",
+            "light":"Luz indirecta.",
+            "photo":"https://i.pinimg.com/564x/3e/8c/25/3e8c25d498557d73b5e8e227a30d7f08.jpg"
             
         }
 
