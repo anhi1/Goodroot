@@ -23,7 +23,7 @@ async function checkWeather(city) {
 ```
 
 ## Imagénes
- la imágenes son utilizadas de pinterst
+ la imágenes son utilizadas de pinterest
  
 ### Tecnologías utilizadas:
 <p align="left"> 
