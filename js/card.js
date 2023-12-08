@@ -1,12 +1,14 @@
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
+const plantContainer = document.getElementById('plants');
+let allPlants = [];  // Almacenar todas las plantas originales
 
+// Función para imprimir las plantas en el contenedor
 function printPlants(data) {
-    let content = document.getElementById('plants');
-    content.innerHTML = ''; // Limpiar el contenido existente antes de agregar nuevos elementos
+    plantContainer.innerHTML = ''; // Limpiar el contenido existente antes de agregar nuevos elementos
 
     for (let i in data) {
-        content.innerHTML += 
+        plantContainer.innerHTML += 
         `<div class="card m-4" style="width:280px;">
             <a class="descripcion" href="description.html"><img src="${data[i].photo}" class="card-img-top" alt="plantas"></a>  
             <div class="card-body">
@@ -19,24 +21,28 @@ function printPlants(data) {
     }
 }
 
+// Evento de clic en el botón de búsqueda
 searchBtn.addEventListener("click", () => {
-    // Realizar la búsqueda basada en el campo de búsqueda
+    // Obtener el término de búsqueda y convertirlo a minúsculas
     const searchTerm = searchBox.value.toLowerCase();
-    
+
     // Filtrar las plantas que coinciden con el término de búsqueda
-    const filteredPlants = datosRecibidosJson.plants.filter(plant =>
+    const filteredPlants = allPlants.filter(plant =>
         plant.name.toLowerCase().includes(searchTerm)
     );
 
-    // Llamar a la función con los resultados filtrados
+    // Imprimir las plantas filtradas
     printPlants(filteredPlants);
 });
 
+// Realizar la solicitud fetch para obtener todos los datos
 fetch('plants.json')
     .then(res => res.json())
-    .then(datosRecibidosJson => printPlants(datosRecibidosJson.plants))
+    .then(datosRecibidosJson => {
+        // Almacenar todas las plantas originales
+        allPlants = datosRecibidosJson.plants;
+        // Imprimir todas las plantas
+        printPlants(allPlants);
+    })
     .catch(error => console.error("Error al obtener datos del servidor:", error));
-
-
-
 
