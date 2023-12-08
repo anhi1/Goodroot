@@ -33,11 +33,9 @@ searchBtn.addEventListener("click", () => {
 });
 
 fetch('plants.json')
-    .then(responseDeServidor => responseDeServidor.json())
-    .then(datosRecibidosJson => {
-        window.datosRecibidosJson = datosRecibidosJson;
-        printPlants(datosRecibidosJson.plants);
-    });
+    .then(res => res.json())
+    .then(datosRecibidosJson => printPlants(datosRecibidosJson.plants))
+    .catch(error => console.error("Error al obtener datos del servidor:", error));
 
 
 
