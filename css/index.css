@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
+    
 }
 
 #plants {
@@ -44,22 +45,23 @@ path {
 .fondo{
    
     background-color: rgb(235, 236, 234);
-    background-image: url(http:/../img/fondo.svg);
+    background-image: url(http:/../img/fondo1.svg);
     height: 200px;
+    margin-bottom: 20px;
 
 }
 
 
 .contenido {
+    margin: auto 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     max-width: 470px;
     color: #5b548a;
-    margin: 20px auto 0;
+    margin: 0 auto;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 60px;
     text-align: center;
 
 }
@@ -84,8 +86,7 @@ path {
     margin-right: 16px;
     font-size: 18px;
     max-width: 470px;
-
-}
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;}
 
 .buscador button {
     border: 0;
@@ -95,7 +96,23 @@ path {
     width: 60px;
     height: 60px;
     cursor: pointer;
-}
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;}
+
+.buscador button:active{
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;}
+
+    @media (max-width: 470px) {
+        .buscador input {
+          width: 80px;
+          height: 50px;
+        }
+        .buscador button {
+            width: 50px;
+            height: 50px;
+          }
+      }
+    
+   
  /*-----*/
 
 .card2 {
@@ -209,3 +226,11 @@ button svg path {
     margin-top: 20px;
 }
 
+footer{
+    background-color: #555;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white
+}
