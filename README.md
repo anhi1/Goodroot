@@ -1,4 +1,17 @@
-# Tema: Ecommerce de plantas
+# Tema: Consumo de una API
+
+Este proyecto se basa en coger datos de una api externa y de un json creado, esta aplicacion solo muestra como se pude obtener datos de una api externa como el fecth
+
+```javascript
+fetch('plants.json')
+    .then(res => res.json())
+    .then(datosRecibidosJson => {allPlants = datosRecibidosJson.plants;
+        // Imprimir todas las plantas
+        printPlants(allPlants);
+       
+    })
+    .catch(error => console.error("Error al obtener datos del servidor:", error));
+```
 
 <h3 align="left">Tecnologías utilizadas:</h3>
 <p align="left"> 
