@@ -1,7 +1,7 @@
 # Tema: Consumo de una API
 
-Este proyecto se basa en coger datos de una api externa y de un json creado, esta aplicacion solo muestra como se pude obtener datos de una api externa como el fecth
-
+Este proyecto se basa en coger datos de una api externa y de un json creado,
+esta aplicacion solo muestra como se pude obtener datos a traves del fetch y una funcion asíncrona.
 ```javascript
 fetch('plants.json')
     .then(res => res.json())
@@ -11,6 +11,15 @@ fetch('plants.json')
        
     })
     .catch(error => console.error("Error al obtener datos del servidor:", error));
+```
+
+Funcion asíncrona
+```javascript
+async function checkWeather(city) {
+        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+        let data = await response.json();
+        console.log(data);
+}
 ```
 
 <h3 align="left">Tecnologías utilizadas:</h3>
