@@ -1,7 +1,7 @@
 # Tema: Consumo de una API
 
 Este proyecto se basa en coger datos de una api externa y de un json creado,
-esta aplicacion solo muestra como se pude obtener datos a traves del fetch y una funcion asíncrona.
+esta aplicacion solo muestra como se puede obtener datos a traves del fetch y una funcion asíncrona.
 ```javascript
 fetch('plants.json')
     .then(res => res.json())
