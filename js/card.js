@@ -1,5 +1,5 @@
-const searchBox = document.querySelector(".search input");
-const searchBtn = document.querySelector(".search button");
+const searchBox = document.querySelector(".buscador input");
+const searchBtn = document.querySelector(".buscador button");
 const plantContainer = document.getElementById('plants');
 let allPlants = [];  // Almacenar todas las plantas originales
 
