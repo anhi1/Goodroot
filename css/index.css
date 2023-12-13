@@ -53,13 +53,13 @@ path {
 
 
 .contenido {
-    margin: auto 0px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 470px;
     color: #5b548a;
-    margin: 0 auto;
+    margin: 0px auto;
     border-radius: 20px;
     padding: 60px;
     text-align: center;
