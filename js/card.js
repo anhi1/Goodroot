@@ -1,6 +1,6 @@
 const searchBox = document.querySelector(".buscador input");
 const searchBtn = document.querySelector(".buscador button");
-let allPlants = [];  // Almacenar todas las plantas originales
+  // Almacenar todas las plantas originales
 
 function loadData(x) {
     // fetch('https://cristinamaser.com/api/invitations/'+parseInt(x)+1)
@@ -23,6 +23,12 @@ function printModal(x) {
     `<div>
     <img src="${x.photo}" class="card-img-top" alt="plantas">
     <p>${x.description}</p>
+    <p>Lugar: ${x.location}</p>
+    <p><strong>Temperatura:</strong> ${x.temperature}</p>
+    <p><strong>Toxidad:</strong> ${x.toxicidad}</p>
+    <p><strong>Riego:</strong> ${x.riego}</p>
+    <p><strong>Luz:</strong> ${x.light}</p>
+    
     </div>`
     document.getElementById('closeModalButton').addEventListener('click', function(){
         miModal.hide();
@@ -42,11 +48,9 @@ function printPlants(data){
             <div class="card-body">
                 <span class="card-text"><strong>${data[i].name}</strong></span>
                 <p class="card-text"><strong>Precio:</strong> ${data[i].price}€</p>
-                <p class="card-text"><strong>Temperatura:</strong> ${data[i].temperature}°C</p>
-                <p class="card-text"><strong>Riego:</strong> ${data[i].riego}</p>
             </div>
 
-            <a data-value="${i}" class="btn btn-primary activeModal" href="#">Ver</a>
+            <a data-value="${i}" class="btn btn-link activeModal text-success" href="#">Ver</a>
         </div>`;
     }
     let linkModales = document.getElementsByClassName('activeModal');
@@ -64,17 +68,21 @@ fetch('plants.json')
 
 
 
-
+    let allPlants = [];
 
 searchBtn.addEventListener("click", () => {
+    
     const searchTerm = searchBox.value.toLowerCase();
 
     const filteredPlants = allPlants.filter(plant =>
         plant.name.toLowerCase().includes(searchTerm)
     );
-    printPlants(filteredPlants);   // Imprimir las plantas filtradas
 
+    printPlants(filteredPlants); 
+   
 });
+
+
 // Realizar la solicitud fetch para obtener todos los datos
 fetch('plants.json')
     .then(res => res.json())
