@@ -1,7 +1,26 @@
 # Tema: Consumo de una API
 
-Este proyecto se basa en coger datos de una api externa y de un json creado,
-esta aplicacion solo muestra como se puede obtener datos a traves del fetch y una funcion asíncrona.
+Este proyecto se basa en coger datos de una api externa y de un json creado, esta aplicación solo muestra como se puede obtener datos a traves del fetch y una funcion asíncrona.
+
+## Api 
+La OpenWeatherMap API es una interfaz de programación de aplicaciones que proporciona datos meteorológicos. Permite acceder a información meteorológica actual y pronósticos para integrarla en sus aplicaciones, sitios web u otros servicios.
+
+Para utilizar la OpenWeatherMap API, hacer los sigiuentes pasos:
+- Regístrate: Crea una cuenta en el sitio web de OpenWeatherMap y obtén tu clave de API. La clave es necesaria para autenticar tus solicitudes a la API.
+- Selecciona el Tipo de Plan: OpenWeatherMap ofrece varios planes, incluyendo un plan gratuito con ciertas limitaciones y planes de pago con características adicionales. Selecciona el plan que se ajuste a tus necesidades.
+- Realiza Solicitudes a la API: Utiliza tu clave de API para realizar solicitudes HTTP a las endpoints de la OpenWeatherMap API. Las solicitudes pueden ser para obtener datos actuales, pronósticos, mapas meteorológicos y más.
+
+Aquí hay un ejemplo simple de cómo obtener el pronóstico actual del clima para una ubicación específica utilizando la API de OpenWeatherMap con JavaScript y Fetch:
+
+Funcion asíncrona
+```javascript
+async function checkWeather(city) {
+        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
+        let data = await response.json();
+        console.log(data);
+}
+```
+Esto es un ejemplo de como se obtener los datos del json creado.
 ```javascript
 fetch('plants.json')
     .then(res => res.json())
@@ -12,17 +31,7 @@ fetch('plants.json')
     })
     .catch(error => console.error("Error al obtener datos del servidor:", error));
 ```
-
-Funcion asíncrona
-```javascript
-async function checkWeather(city) {
-        const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
-        let data = await response.json();
-        console.log(data);
-}
-```
-
-## Imagénes
+### Imagénes
  la imágenes son utilizadas de pinterest
  
 ### Tecnologías utilizadas:
