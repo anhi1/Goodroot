@@ -1,7 +1,7 @@
 {
     "plants": [
         {
-            "id":1,
+            "id":0,
             "name":"Hoya Kerrii",
             "description":"Procede de Sudáfrica. Esta mini planta seguirá siendo pequeña, por lo que no tendréis que preocuparos por transplantarla ni cambiarla de sitio.", 
             "price":4.95,
@@ -13,7 +13,7 @@
             "photo":"https://i.pinimg.com/564x/a1/e8/ea/a1e8ea461621c549db85ea197586bbb2.jpg"
         },
         {
-            "id":2,
+            "id":1,
             "name":"Zamioculca",
             "description":"La Zamioculcas Zamifoliia es una de las plantas top para aquellos mata-plantas. Es impresionante la relación fácil cuidado - preciosidad de esta planta de origen africano, desde hace unos años se ha convertido en una mini obligada en cualquier casa. Se la relaciona directamente con ser calibrante de las corrientes del feng shui. Tiene un crecimiento lento pero crece hasta un metro de altura. Lo mejor de todo es que sus cuidado son muuuy sencillos. ",
             "price":6.95,
@@ -25,7 +25,7 @@
             "photo":"https://i.pinimg.com/564x/b8/58/63/b858636584ffdcc421100f6adbe36f9e.jpg"
         },
         {
-            "id":3,
+            "id":2,
             "name":"Pilea Peperomioides",
             "description":"Si este nombre os parece un poco imposible, que sepáis que también se la conoce como planta china del dinero o planta de misionero. En los últimos años se ha puesto de moda y es un must en cualquier ‘casa pinterest’ que se precie.",
             "price":5.95,
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "id":4,
+            "id":3,
             "name":"Begonia",
             "description":"Es feliz en espacios muy muy luminosos pero ya sabéis, sin luz directa del sol. Así mismo, si tenéis una zona al aire libre donde dé la sombra, trasladadlas allí en verano.",
             "price":4.95,
@@ -55,7 +55,7 @@
             "photo":"https://i.pinimg.com/564x/89/2c/40/892c40d53434bb0a61634e14d7a908f7.jpg"
         },
         {
-            "id":5,
+            "id":4,
             "name":"Monstera deliciosa",
             "description":"Contaros que aunque también sea Monstera, no se parece en nada a la Adansonii, ni en crecimiento ni en las hojas. Esta crece un poco más lenta, y sus hojas no tienen los agujeros característicos de la otra al principio. Sus hojas se irán ramificando a medida que crece desde el nervio hasta el borde.",
             "price":6.95,
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "id":6,
+            "id":5,
             "name":"Alocasia Frydek Variegata",
             "description":"También llamada White Little Queen. Es una de las plantas más raras y exóticas que existen y se producen muy muy pocas a lo largo del año.",
             "price":5.95,
@@ -87,7 +87,7 @@
             
         },
         {
-            "id":7,
+            "id":6,
             "name":"Alocasia",
             "description":"Procede de África y es bautizada con muchos nombres, los más famosos:planta bayoneta. Crece despacio pero es alucinante como de van desarrollando las nuevas hojas.Es una de las mejores plantas purificadoras.",
             "price":5.95,
@@ -100,7 +100,7 @@
             
         },
         {
-            "id":8,
+            "id":7,
             "name":"Potho",
             "description":"El Potho es probablemente el más bonito de la familia. Se conoce también como Reina de Mármol por sus tonos blancos. Su nombre científico es Epipremnum Aureum Marble Queen. Sus hojas cada vez se van haciendo más blancas y con forma de corazón. Su crecimiento es lento pero seguro, es una de las plantas indestructibles que necesita muy poco cuidado, apta para que a todos los públicos le dure una vida.",
             "price":5.95,

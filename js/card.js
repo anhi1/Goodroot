@@ -2,14 +2,14 @@ const searchBox = document.querySelector(".buscador input");
 const searchBtn = document.querySelector(".buscador button");
   // Almacenar todas las plantas originales
 
-function loadData(x) {
+function loadData(index) {
     // fetch('https://cristinamaser.com/api/invitations/'+parseInt(x)+1)
     // .then(response => response.json())
     // .then(responseJson => printModal(responseJson))
     // x = parseInt(x) + 1;
     fetch('plants.json')
     .then(response => response.json())
-    .then(responseJson => printModal(responseJson.plants[x]))
+    .then(responseJson => printModal(responseJson.plants[index]))
   }
 
 function printModal(x) { 
@@ -61,9 +61,32 @@ function printPlants(data){
         })
     }
 }
-fetch('plants.json')
-    .then(res => res.json())
-    .then(datosRecibidosJson => printPlants(datosRecibidosJson.data))
+
+/* printFilter*/
+function printFilter(data){
+    let plantContainer = document.getElementById('plants');
+    plantContainer.innerHTML = ''; // Limpiar el contenido existente antes de agregar nuevos elementos
+    for (let plant of data) {
+        plantContainer.innerHTML +=
+            `<div class="card m-4" style="width:280px;">
+            <a class="modal-dialog" href=""><img src="${plant.photo}" class="card-img-top" alt="plantas"></a>  
+            <div class="card-body">
+                <span class="card-text"><strong>${plant.name}</strong></span>
+                <p class="card-text"><strong>Precio:</strong> ${plant.price}€</p>
+            </div>
+
+            <a data-index="${plant.id}" class="btn btn-link activeModal text-success" href="#">Ver</a>
+        </div>`;
+    }
+    let linkModales = document.getElementsByClassName('activeModal');
+    for(let linkModal of linkModales){
+        linkModal.addEventListener('click', function(e){
+            e.preventDefault();
+            loadData(e.target.dataset.index)
+        })
+    }
+}
+    
 
 
 
@@ -73,12 +96,11 @@ fetch('plants.json')
 searchBtn.addEventListener("click", () => {
     
     const searchTerm = searchBox.value.toLowerCase();
-
     const filteredPlants = allPlants.filter(plant =>
         plant.name.toLowerCase().includes(searchTerm)
     );
 
-    printPlants(filteredPlants); 
+    printFilter(filteredPlants); 
    
 });
 
