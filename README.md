@@ -20,7 +20,7 @@ async function checkWeather(city) {
         console.log(data);
 }
 ```
-Esto es un ejemplo de como se obtener los datos del json creado.
+Esto es un ejemplo de como obtener los datos del json creado.
 ```javascript
 fetch('plants.json')
     .then(res => res.json())
