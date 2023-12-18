@@ -1,12 +1,8 @@
 const searchBox = document.querySelector(".buscador input");
 const searchBtn = document.querySelector(".buscador button");
-  // Almacenar todas las plantas originales
+  
 
 function loadData(index) {
-    // fetch('https://cristinamaser.com/api/invitations/'+parseInt(x)+1)
-    // .then(response => response.json())
-    // .then(responseJson => printModal(responseJson))
-    // x = parseInt(x) + 1;
     fetch('plants.json')
     .then(response => response.json())
     .then(responseJson => printModal(responseJson.plants[index]))
@@ -28,7 +24,6 @@ function printModal(x) {
     <p><strong>Toxidad:</strong> ${x.toxicidad}</p>
     <p><strong>Riego:</strong> ${x.riego}</p>
     <p><strong>Luz:</strong> ${x.light}</p>
-    
     </div>`
     document.getElementById('closeModalButton').addEventListener('click', function(){
         miModal.hide();
@@ -40,8 +35,8 @@ function printModal(x) {
 
 function printPlants(data){
     let plantContainer = document.getElementById('plants');
-    plantContainer.innerHTML = ''; // Limpiar el contenido existente antes de agregar nuevos elementos
     for (let i in data) {
+        console.log(i)
         plantContainer.innerHTML +=
             `<div class="card m-4" style="width:280px;">
             <a class="modal-dialog" href=""><img src="${data[i].photo}" class="card-img-top" alt="plantas"></a>  
@@ -74,7 +69,6 @@ function printFilter(data){
                 <span class="card-text"><strong>${plant.name}</strong></span>
                 <p class="card-text"><strong>Precio:</strong> ${plant.price}€</p>
             </div>
-
             <a data-index="${plant.id}" class="btn btn-link activeModal text-success" href="#">Ver</a>
         </div>`;
     }
