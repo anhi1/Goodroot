@@ -33,6 +33,9 @@ fetch('plants.json')
 ```
 ### Imagénes
  la imágenes son utilizadas de pinterest
+
+### trello
+https://trello.com/invite/b/KXC7sAEF/ATTI49dc06d38aa35926ae1b901943a24803012CBC65/plantas
  
 ### Tecnologías utilizadas:
 <p align="left"> 
