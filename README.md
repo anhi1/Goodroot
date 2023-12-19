@@ -32,11 +32,14 @@ fetch('plants.json')
     .catch(error => console.error("Error al obtener datos del servidor:", error));
 ```
 ### Imagénes
- la imágenes son utilizadas de pinterest
+ Las imágenes son utilizadas de pinterest
 
-### trello
+### Trello
 https://trello.com/invite/b/KXC7sAEF/ATTI49dc06d38aa35926ae1b901943a24803012CBC65/plantas
- 
+
+### Figma
+ <img src="img/home.jpg" alt="bootstrap" width="600" />
+
 ### Tecnologías utilizadas:
 <p align="left"> 
 </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/>
